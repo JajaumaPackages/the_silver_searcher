@@ -4,7 +4,7 @@
 
 Name:           the_silver_searcher
 Version:        0.22.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Super-fast text searching tool
 Group:          Applications/Text
 License:        ASL 2.0 and BSD
@@ -46,6 +46,9 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}
 %doc README.md LICENSE
 
 %changelog
+* Mon Aug 18 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.22.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
+
 * Sun Jun 22 2014 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.22.0-1
 - update to 0.22.0
 
