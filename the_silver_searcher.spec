@@ -1,11 +1,11 @@
-%global commit cfcaede7c5fe5ee16b7cfad59cbb0648c80d4cb2
+%global commit 4b270d1afa5dce30975b4f987423077c9ad0db56
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global bashcompdir %(pkg-config --variable=completionsdir bash-completion)
 
 Name:           the_silver_searcher
-Version:        0.22.0
-Release:        2%{?dist}
-Summary:        Super-fast text searching tool
+Version:        0.24.1
+Release:        1%{?dist}
+Summary:        Super-fast text searching tool (ag)
 Group:          Applications/Text
 License:        ASL 2.0 and BSD
 URL:            https://github.com/ggreer/the_silver_searcher
@@ -46,6 +46,9 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}
 %doc README.md LICENSE
 
 %changelog
+* Tue Sep 30 2014 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.24.1-1
+- update to 0.24.1
+
 * Mon Aug 18 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.22.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
 
