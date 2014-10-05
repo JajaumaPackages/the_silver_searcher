@@ -5,7 +5,7 @@
 Name:           the_silver_searcher
 Version:        0.24.1
 Release:        1%{?dist}
-Summary:        Super-fast text searching tool (ag)
+Summary:        Super-fast text searching tool(ag)
 Group:          Applications/Text
 License:        ASL 2.0 and BSD
 URL:            https://github.com/ggreer/the_silver_searcher
