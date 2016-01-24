@@ -1,6 +1,9 @@
 %global commit 36754027ac4f44c1d4329ee2b4fa1b112b6c3e45
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global bashcompdir %(pkg-config --variable=completionsdir bash-completion)
+%if "%{bashcompdir}" == ""
+%define compdir "/etc/bash_completion.d"
+%endif
 
 Name:           the_silver_searcher
 Version:        0.31.0
