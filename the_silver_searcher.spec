@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}
 %doc README.md LICENSE
 
 %changelog
-* Sun Jan 24 2015 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.31.0-2
+* Sun Jan 24 2016 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.31.0-2
 - Build for RHEL6(EPEL)
 
 * Tue Dec 29 2015 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.31.0-1
