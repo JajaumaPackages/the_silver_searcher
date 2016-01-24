@@ -2,7 +2,7 @@
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global bashcompdir %(pkg-config --variable=completionsdir bash-completion)
 %if "%{bashcompdir}" == ""
-%define compdir "/etc/bash_completion.d"
+%define bashcompdir "/etc/bash_completion.d"
 %endif
 
 Name:           the_silver_searcher
