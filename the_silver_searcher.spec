@@ -1,4 +1,4 @@
-%global commit 36754027ac4f44c1d4329ee2b4fa1b112b6c3e45
+%global commit 31e1f8cb856736df254dccb62cf15e937002ef48
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global bashcompdir %(pkg-config --variable=completionsdir bash-completion)
 %if "%{bashcompdir}" == ""
@@ -6,8 +6,8 @@
 %endif
 
 Name:           the_silver_searcher
-Version:        0.31.0
-Release:        3%{?dist}
+Version:        0.32.0
+Release:        1%{?dist}
 Summary:        Super-fast text searching tool (ag)
 Group:          Applications/Text
 License:        ASL 2.0 and BSD
@@ -51,8 +51,8 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}
 %doc README.md LICENSE
 
 %changelog
-* Fri Feb 05 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.31.0-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+* Thu Jun 30 2016 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.32.0-1
+- update to 0.32.0
 
 * Sun Jan 24 2016 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.31.0-2
 - Build for RHEL6(EPEL)
