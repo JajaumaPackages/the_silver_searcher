@@ -7,7 +7,7 @@
 
 Name:           the_silver_searcher
 Version:        0.32.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Super-fast text searching tool (ag)
 Group:          Applications/Text
 License:        ASL 2.0 and BSD
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}
 %endif
 
 %changelog
-* Thu Sep 22 2016 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.32.0-2
+* Thu Sep 22 2016 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.32.0-3
 - Fixed bz#1377596
 
 * Thu Jun 30 2016 Kenjiro Nakayama <nakayamakenjiro@gmail.com> - 0.32.0-1

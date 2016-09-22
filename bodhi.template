@@ -1,0 +1,25 @@
+[ the_silver_searcher-0.32.0-2.el6 ]
+
+# bugfix, security, enhancement, newpackage (required)
+type=bugfix
+
+# testing, stable
+request=testing
+
+# Bug numbers: 1234,9876
+bugs=1377596
+
+
+# Here is where you give an explanation of your update.
+notes=Fixed bz#1377596 (v2)
+
+# Enable request automation based on the stable/unstable karma thresholds
+autokarma=True
+stable_karma=3
+unstable_karma=-3
+
+# Automatically close bugs when this marked as stable
+close_bugs=True
+
+# Suggest that users restart after update
+suggest_reboot=False
