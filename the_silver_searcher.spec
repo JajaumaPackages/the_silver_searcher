@@ -1,18 +1,16 @@
-%global commit 99cf1834ce2c038c184d64793aaa6686381c49c5
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global bashcompdir %(pkg-config --variable=completionsdir bash-completion)
 %if "%{bashcompdir}" == ""
 %define bashcompdir "/etc/bash_completion.d"
 %endif
 
 Name:           the_silver_searcher
-Version:        2.0.0
-Release:        3%{?dist}
+Version:        2.1.0
+Release:        1%{?dist}
 Summary:        Super-fast text searching tool (ag)
 Group:          Applications/Text
 License:        ASL 2.0 and BSD
 URL:            https://github.com/ggreer/the_silver_searcher
-Source:         https://github.com/ggreer/the_silver_searcher/archive/%{commit}/%{version}-%{shortcommit}.tar.gz
+Source:         https://github.com/ggreer/the_silver_searcher/archive/%{version}.tar.gz
 
 BuildRequires:  autoconf
 BuildRequires:  automake
@@ -28,7 +26,7 @@ The Silver Searcher is a code searching tool similar to ack,
 with a focus on speed.
 
 %prep
-%setup -q -n %{name}-%{commit}
+%setup -q
 
 %build
 aclocal
@@ -58,6 +56,9 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}
 %{_datadir}/zsh/site-functions/_%{name}
 
 %changelog
+* Fri Oct 27 2017 Jajauma's Packages <jajauma@yandex.ru> - 2.1.0-1
+- Update to latest upstream release
+
 * Thu Aug 03 2017 Fedora Release Engineering <releng@fedoraproject.org> - 2.0.0-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild
 
